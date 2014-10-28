@@ -72,8 +72,8 @@ static const int GRID_COLUMNS = 10;
     int row =0;
     int column = 0;
     
-    row = touchPosition.x / _cellHeight;
-    column = touchPosition.y / _cellWidth;
+    row = touchPosition.y / _cellHeight;
+    column = touchPosition.x / _cellWidth;
     
     return _gridArray[row][column];
 }
